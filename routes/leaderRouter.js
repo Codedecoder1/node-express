@@ -38,7 +38,7 @@ leaderRouter.route('/:leaderId')
 })
 
 .post((req, res, next) => {
-    res.end( 'POST operation no suppoted on' +  req.params.leaderId );
+    res.end(`POST operation no suppoted on ${req.params.leaderId}` );
 })
 .put((req, res, next)=> {
     res.statusCode = 403;

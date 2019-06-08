@@ -38,7 +38,7 @@ promoRouter.route('/:promoId')
 })
 
 .post((req, res, next) => {
-    res.end( 'POST operation no suppoted on' +  req.params.promoId );
+    res.end( `POST operation no suppoted on ${req.params.promoId}` );
 })
 .put((req, res, next)=> {
     res.statusCode = 403;
